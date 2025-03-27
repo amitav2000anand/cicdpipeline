@@ -47,15 +47,6 @@ jobs:
     - name: Install Power Platform Tools
       uses: microsoft/powerplatform-actions/actions-install@v1.8.0
       
-    - name: who-am-i action
-      uses: microsoft/powerplatform-actions/who-am-i@v1.8.0
-      with:
-        environment-url: ${{env.ENVIRONMENT_URL}}
-        app-id: ${{env.CLIENT_ID}}
-        client-secret: ${{ secrets.POWERPLATFORM_SECRET }}
-        tenant-id: ${{env.TENANT_ID}}
-
-
     - name: export-solution action
       uses: microsoft/powerplatform-actions/export-solution@v1.8.0
       with:
